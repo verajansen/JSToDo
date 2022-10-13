@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="api-client.js" defer></script>
+		<title>JS Assignment To do list</title>
+	</head>
+
+	<body onload="loadTasks()">
+		<header>task list</header>
+		<h1>Task List 2022</h1>
+
+		<ul>
+			<li>
+				New task
+				<input
+					type="text"
+					id="input1"
+					style="border: solid 1px #000000; background-color: #ffffff"
+				/>
+				<input
+					type="button"
+					value="Add task"
+					onclick="newTask(document.getElementById('input1').value)"
+					style="background-color: #cccccc; cursor: pointer"
+				/>
+			</li>
+		</ul>
+		<ul id="tasklist"></ul>
+	</body>
+</html>
